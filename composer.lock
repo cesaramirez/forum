@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5eba86da256ddeb8084c32d3d10e18d3",
+    "content-hash": "cb15d2cd16ec8cd1ad307fc7970932fe",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2106,6 +2106,57 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2016-09-20T12:50:39+00:00"
+        },
+        {
+            "name": "tqt/laravel-uikit",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twoquethree/laravel-uikit.git",
+                "reference": "2c631a0fde4d5fdcb96c4d44850b87175db1d5e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twoquethree/laravel-uikit/zipball/2c631a0fde4d5fdcb96c4d44850b87175db1d5e3",
+                "reference": "2c631a0fde4d5fdcb96c4d44850b87175db1d5e3",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "TQT\\Presets\\UIkit\\UIkitPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TQT\\Presets\\UIkit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "César A. Ramírez",
+                    "email": "cesar.ramirez.sv@gmail.com"
+                }
+            ],
+            "description": "Laravel 5.5 frontend preset for UIkit 3",
+            "keywords": [
+                "laravel",
+                "preset",
+                "uikit"
+            ],
+            "time": "2017-11-18T20:03:22+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Thread;
+use App\Reply;
 use Illuminate\Http\Request;
 
-class ThreadController extends Controller
+class RepliesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,6 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**
@@ -24,62 +23,61 @@ class ThreadController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Thread  $thread
+     * @param \App\Reply $reply
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(Thread $thread)
+    public function show(Reply $reply)
     {
-        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Thread  $thread
+     * @param \App\Reply $reply
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(Thread $thread)
+    public function edit(Reply $reply)
     {
-        //
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Thread  $thread
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Reply               $reply
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Thread $thread)
+    public function update(Request $request, Reply $reply)
     {
-        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Thread  $thread
+     * @param \App\Reply $reply
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Thread $thread)
+    public function destroy(Reply $reply)
     {
-        //
     }
 }
