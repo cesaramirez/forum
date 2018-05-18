@@ -1,20 +1,26 @@
-@extends('layouts.app') 
+@extends('layouts.app')
 
 @section('content')
-<div class="uk-container uk-margin">
-	<div class="uk-card uk-card-default uk-width-1-1">
-		<div class="uk-card-header">
-			<h3 class="uk-card-title">Threads</h3>
-		</div>
-		<div class="uk-card-body">
-			<dl class="uk-description-list">
-				@foreach($threads as $thread)
-					<dt><a href="{{ route('threads.show', $thread->id) }}">{{ $thread->title }}</a></dt>
-					<dd>{{ $thread->body }}</dd>
-					<hr> 
-				@endforeach
-			</dl>
-		</div>
-	</div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Forum Threads</div>
+                    <div class="panel-body">
+                        @foreach ($threads as $thread)
+                            <article>
+                                <h4>
+                                    <a href="{{ $thread->path() }}">
+                                        {{ $thread->title }}
+                                    </a>
+                                </h4>
+                                <div class="body">{{ $thread->body }}</div>
+                            </article>
+                            <hr>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
